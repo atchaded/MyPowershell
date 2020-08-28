@@ -1,0 +1,4 @@
+ Select -First 5
+Get-CimInstance -ClassName win32_operatingsystem | select csname, lastbootuptime
+
+Get-EventLog -LogName system -Source user32 -Newest 1 | fl *
